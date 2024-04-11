@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head> 
+<body>
+    <div class="app">
+        <div class="penal"> 
+            <div class="logo">
+                <img src="./image/Logotip.svg" alt="logo">
+            </div> 
+            <nav class="panal__nav"> 
+                <div class="nav__button">
+                    <!-- <button class="button__nav button__nav_activ" menu-habbit-id="1">
+                        <img src="./image/Giri.svg" alt="">
+                    </button>     
+                    <button class="button__nav">
+                        <img src="./image/Botl.svg" alt="">
+                    </button>
+                    <button class="button__nav">
+                        <img src="./image/Food.svg" alt="">
+                    </button> -->
+                </div> 
+                <div class="add__plas">
+                    <button class="add__plas_button" onclick="modalActiv()">
+                        <img src="./image/Add_plst.svg" alt="">
+                    </button>
+                </div> 
+            </nav>
+        </div>
+        <div class="content"> 
+            <div class="panal__content">
+                <div>
+                    <h1 class="heading__content"> 
+                        Отжимания
+                    </h1> 
+                </div>
+                
+                <div class="progress"> 
+                    <div>
+                        <h2>
+                            прогресс
+                        </h2>
+
+
+                        <span class="percentage__progress">
+                            80%
+                        </span>
+                    </div>
+                    <div class="progress__scale">
+                        <div class="progress__scale_activ">
+
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="notes"> 
+
+                <div id="Notes">
+
+                
+
+                <!-- <div class="notes__block">
+                    <div class="notes__block_div">
+                        <h3>
+                            День 1
+                        </h3> 
+                    </div>
+                    <div class="notes__input">
+                        <span class="notes__input_span">
+                            первый день всегда дается тяжело
+                        </span>
+
+                        <button class="notes__input_button">
+                            <img src="./image/delit.svg" alt="">
+                        </button>
+                    </div>
+                </div> -->
+
+                </div>
+                
+                <div class="day_next">
+                    <div class="notes__block_div">
+                        <h3> 
+                           День 2
+                        </h3> 
+                    </div>
+                    <form onsubmit="renderBtn(event)" class="notes__input">
+
+                        <label for="comment" ><img src="./image/comment.svg" alt="comment" class="img__comment"></label>
+                        <input name="comment" type="text" placeholder="Коментарий" name="comment" autocomplete="off" data-form-type="outher" class="notes__input_strok" id="comment"> 
+                        
+                        <button type="submit" id="button_input">
+                            <span>Готово</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+           
+        </div>
+        <div class="cover modal_active">
+            <div class="modal">
+                <h4 class="header_modal">Новая привычка</h4> 
+                <span class="title_modal">Иконка</span>
+                <div class="modal_icon">
+                    <button class="button_modal" onclick="activModelIcon(this,'Giri')">
+                        <img src="./image/Giri.svg" alt="">
+                    </button>
+
+                    <button class="button_modal icon__activ" onclick="activModelIcon(this,'Botl')">
+                        <img src="./image/Botl.svg" alt="">
+                    </button>
+
+                    <button class="button_modal" onclick="activModelIcon(this,'Food')">
+                        <img src="./image/Food.svg" alt="">
+                    </button>
+                </div>
+                <button class="btn_aout" onclick="modalActiv()">
+                    <img src="./image/aout.svg" alt="">
+                </button>
+
+                <form action="" class="form_modal" onsubmit="addHabbit(event)">
+                    <input type="text" placeholder="Название" autocomplete="off" name="name" class="input_modal__form">
+                    <input type="text" hidden name="icon" value="Botl" class="modal_form-input-icon">
+                    <input type="number" autocomplete="off" placeholder="Цель" name="target" class="input_modal__form apperance">
+                    <button type="submit" class="btn_modal__form" >Добавить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./JavaScript/index.js"></script>
+</body>
+</html>

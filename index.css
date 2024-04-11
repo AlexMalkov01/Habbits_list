@@ -1,0 +1,430 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex; 
+    background: rgb(243, 246, 253);
+    width: 100vw;
+    height: 100vh; 
+}
+
+
+button {
+
+    display: inline-block; 
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0px 8px 14px 0px rgba(62, 107, 224, 0.12);
+    background: rgb(255, 255, 255);
+
+    padding: 10px 11px;     
+    cursor: pointer;
+}
+
+button:hover {
+
+    background: rgb(80, 81, 249);
+}
+
+button:hover img {
+
+    filter: brightness(0)invert(100);
+}
+
+
+.button__nav_activ  {
+    background: rgb(80, 81, 249);
+    
+}
+
+
+.button__nav_activ img {
+    filter: brightness(0)invert(100);
+}
+
+
+.penal {
+
+    display: inline-block;
+    padding: 0px 28px;
+    padding-top: 27px;
+    background-color: #FBFAFF; 
+    height: 100%;
+}
+
+.panal__nav {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px; 
+
+} 
+
+.nav__button {
+
+    padding-top: 80px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 25px 
+}
+
+.add__plas_button  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(202, 213, 255);
+    border-radius: 14px;  
+}
+
+.add__plas {
+    display: flex; 
+    justify-content: center;
+} 
+
+.content { 
+    padding-left: 40px;
+    padding-right: 40px; 
+    width: 100%; 
+    height: 100%;
+}
+
+.panal__content {
+    display: flex; 
+    
+    justify-content: space-between;
+    padding-top: 45px;  
+    
+
+}
+
+
+h2 {
+    display: inline-block;
+    margin-right: 120px;
+
+    color: rgb(35, 35, 96);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.percentage__progress {
+    display: inline-block;
+
+    color: rgb(118, 131, 150);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+} 
+
+.progress {
+    display: flex; 
+    flex-direction: column;
+}
+
+
+.progress__scale {
+    
+    margin-top: 12px;
+    height: 5px;
+
+    border-radius: 4px;
+    background: rgb(230, 233, 237);
+}
+
+.progress__scale_activ{
+
+    width: 80%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+
+    background: rgb(80, 81, 249);
+}
+
+
+
+.heading__content {
+    
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 33px; 
+
+    transition: all .8s ;
+} 
+
+#Notes{
+    display: flex;
+    flex-direction: column;
+    gap: 25px
+}
+
+.notes {
+    padding-top: 70px;
+    display: flex; 
+    flex-direction: column;
+
+    gap: 25px; 
+}
+
+.day_next {
+    display: flex;
+}
+
+.notes__block {
+    display: flex;
+        
+}
+
+.notes__block_div {
+    background: rgb(251, 250, 255);
+    
+    display: flex; 
+    white-space: nowrap;
+    justify-content: center;
+    
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px; 
+    border-right: 1px solid rgb(231, 235, 251);;
+    padding: 20px 40px;
+}
+
+.notes__input {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+
+    background: rgb(255, 255, 255);
+
+    position: relative; 
+}
+
+.notes__input_span {
+    margin-left: 25px;
+
+    color: rgb(35, 35, 95);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.notes__input_button {
+    padding: 4px 4px; 
+    border-radius: 10px ;
+    margin-right: 10px; 
+    
+    background-color: rgb(255, 255, 255);
+}
+
+    input:focus {
+        outline: none;
+    }
+
+.notes__input_strok {
+
+    display: flex;
+    width: 100%; 
+    margin-left: 25px; 
+    margin-right: 15px;
+    padding: 10px 0; 
+    padding-left: 48px; 
+    
+    box-sizing: border-box;
+    border: 1px solid rgb(231, 235, 251);
+    border-radius: 9px;
+
+}
+
+.error {
+    border: solid 1px red;
+}
+
+#button_input {
+
+    padding: 11px 30px;
+
+    border-radius: 9px;
+    background: rgb(237, 236, 254);
+    color: rgb(80, 81, 249);
+
+    border-radius: 10px ;
+    margin-right: 10px; 
+    
+}
+
+.button_input span {
+    color: rgb(80, 81, 249);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+
+#button_input:hover {
+    background-color: #FBFAFF;
+}
+
+.img__comment {
+    position: absolute; 
+    left: 40px;
+    top: 19px; 
+    cursor: pointer;
+} 
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+
+   
+
+    background-color: rgba(0, 0, 0, 0.25);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 10s;
+
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 500px;
+    background-color: #FBFAFF;
+
+    padding: 0 22px;
+    padding-bottom: 42px;
+    padding-top: 22px;
+    border-radius: 10px;
+
+
+    position: relative;
+}
+
+.btn_aout {
+    position: absolute;
+    background-color:none;
+
+    top:15px;
+    right: 15px;
+
+}
+
+.btn_aout:hover {
+    color: red;
+}
+
+.header_modal {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.title_modal {
+    margin-top: 20px;
+    margin-bottom: 10px; 
+
+    color: rgb(118, 131, 150);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+
+}
+
+.form_modal {
+    width: 100%;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.input_modal__form {
+    width: 100%;
+    margin: 0 23px;
+    padding: 12px 0;
+    padding-left: 20px;
+
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(231, 235, 251);
+    border-radius: 9px;
+
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.btn_modal__form {
+    margin-top: 17px;
+
+    color: rgb(80, 81, 249);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14px;
+
+    border-radius: 9px;
+    background: rgb(237, 236, 254);
+
+}
+
+.btn_modal__form:hover {
+    background-color: #f8f7fc;
+} 
+
+.modal_icon {
+    display: flex;
+    gap: 25px;
+}
+
+.modal_active {
+    display: none; 
+} 
+
+
+.icon__activ  {
+    background: rgb(80, 81, 249);
+    
+}
+
+
+.icon__activ img {
+    filter: brightness(0)invert(100);
+}
+
+
+
+
+
+
+
+
+
